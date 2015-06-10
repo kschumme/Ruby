@@ -7,7 +7,7 @@ RSpec.describe "LayoutLinks", type: :request do
       expect(response).to have_http_status(200)
     end
 
-    it "devrait trouver une page Acceuil à '/" do
+    it "devrait trouver une page Acceuil à '/'" do
     	get '/'
     	response.should have_selector('titre', :content => "Acceuil")
     end
