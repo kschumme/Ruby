@@ -1,14 +1,7 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-
-  get 'pages/contact'
-
-  get 'pages/about'
 
   resources :users
-
-  get 'home/index'
-
+  
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
   match '/help', :to => 'pages#help'
