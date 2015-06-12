@@ -1,11 +1,7 @@
 require 'rails_helper'
-
-RSpec.describe "LayoutLinks", type: :request do
+require 'spec_helper'
+#RSpec.describe "LayoutLinks", type: :request do
   describe "GET /layout_links" do
-    it "works! (now write some real specs)" do
-      get layout_links_index_path
-      expect(response).to have_http_status(200)
-    end
 
     it "devrait trouver une page Acceuil à '/'" do
     	get '/'
@@ -26,6 +22,4 @@ RSpec.describe "LayoutLinks", type: :request do
     	get '/help'
     	response.should have_selector('titre', :content => "Aide")
   	end
-  end
-end
 end
