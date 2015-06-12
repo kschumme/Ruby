@@ -2,11 +2,11 @@ Rails.application.routes.draw do
 
   resources :users
 
-  match '/contact' => 'pages#contact', :method => get
-  match '/about' => 'pages#about', :method => get
-  match '/help' => 'pages#help', :method => get
+# get '/contact' => 'pages#contact', :method => get
+# get '/about' => 'pages#about', :method => get
+# get '/help' => 'pages#help', :method => get
 
-  root :to => 'pages#home'
+# root :to => 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
