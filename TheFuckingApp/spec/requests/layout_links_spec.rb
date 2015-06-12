@@ -24,6 +24,6 @@ RSpec.describe "LayoutLinks", type: :request do
 
     it "devrait trouver une page Aide à '/help'" do
     	get '/help'
-    	response.should have_selector('titre', :content =? "Aide")
+    	response.should have_selector('titre', :content => "Aide")
   	end
 end

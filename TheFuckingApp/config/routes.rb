@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   resources :users
 
- match '/contact', to:  'pages#contact', via: :get
- match '/about', to: 'pages#about', via: :get
- match '/help', to: 'pages#help', via: :get
+  match '/contact', to:  'pages#contact', via: :get
+  match '/about', to: 'pages#about', via: :get
+  match '/help', to: 'pages#help', via: :get
 
   root :to => 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
